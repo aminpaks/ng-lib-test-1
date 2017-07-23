@@ -1,0 +1,36 @@
+{
+  "name": "check",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "scripts": {
+    "bundle": "npm run clean && npm run build",
+    "clean": "rimraf dist",
+    "build": "ngc -p tsconfig-aot.json"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@angular/common": "^4.3.1",
+    "@angular/compiler": "^4.3.1",
+    "@angular/compiler-cli": "^4.3.1",
+    "@angular/core": "^4.3.1",
+    "rxjs": "^5.4.2",
+    "zone.js": "^0.8.14"
+  },
+  "peerDependencies": {
+    "@angular/core": ">= 4.0.0 < 5",
+    "rxjs": ">= 5.0.0 < 6",
+    "zone.js": ">= 0.8.0"
+  },
+  "devDependencies": {
+    "rimraf": "^2.6.1",
+    "typescript": "^2.3.4"
+  },
+  "files": [
+    "dist"
+  ]
+}

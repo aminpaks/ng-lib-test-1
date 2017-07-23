@@ -1,0 +1,35 @@
+{
+    "compilerOptions": {
+        "sourceMap": true,
+        "inlineSources": true,
+        "declaration": true,
+        "noImplicitAny": false,
+        "skipLibCheck": true,
+        "stripInternal": true,
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "suppressImplicitAnyIndexErrors": true,
+        "module": "es2015",
+        "target": "es5",
+        "moduleResolution": "node",
+        "lib": [
+            "es2015",
+            "dom"
+        ],
+        "outDir": "./dist",
+        "rootDir": "./src",
+        "baseUrl": ".",
+        "types": []
+    },
+    "files": [
+        "./src/a-module.ts"
+    ],
+    "angularCompilerOptions": {
+        "strictMetadataEmit": true,
+        "skipTemplateCodegen": true,
+        "annotateForClosureCompiler": true,
+        "flatModuleOutFile": "index.js",
+        "flatModuleId": "index",
+        "genDir": "./dist"
+    }
+}
